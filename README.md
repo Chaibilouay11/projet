@@ -1,4 +1,4 @@
-# Projet Dockerisé
+# Projet
 
 ## Structure
 - `frontend/`: Contient le frontend (HTML/CSS/JS).
