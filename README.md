@@ -5,145 +5,145 @@ Application Web avec React, Flask et MySQL
 Ce projet est une application web simple construite avec :
 
 
-Frontend : React (Vite)
+      Frontend : React (Vite)
 
-Backend : Flask (Python)
+      Backend : Flask (Python)
 
-Base de données : MySQL
+      Base de données : MySQL
 
-Conteneurisation : Docker & Docker Compose
+      Conteneurisation : Docker & Docker Compose
 
 📂 Structure du Projet
 
-/web-app
+    /web-app
 
-│── /frontend (Application React)
+    │── /frontend (Application React)
 
-│   ├── /public
+    │   ├── /public
 
-│   ├── /src
+    │   ├── /src
 
-│   │   ├── /components
+    │   │   ├── /components
 
-│   │   ├── /pages
+    │   │   ├── /pages
 
-│   │   ├── App.js
+    │   │   ├── App.js
 
-│   │   ├── index.js
+    │   │   ├── index.js
 
-│   ├── package.json
+    │   ├── package.json
 
-│   ├── vite.config.js
+    │   ├── vite.config.js
 
-│   ├── Dockerfile
+    │   ├── Dockerfile
 
-│
+    │
 
-│── /backend (API Flask)
+    │── /backend (API Flask)
 
-│   ├── /app
+    │   ├── /app
 
-│   │   ├── /routes
+    │   │   ├── /routes
 
-│   │   │   ├── user_routes.py
+    │   │   │   ├── user_routes.py
 
-│   │   ├── /models
+    │   │   ├── /models
 
-│   │   │   ├── user_model.py
+    │   │   │   ├── user_model.py
 
-│   │   ├── __init__.py
+    │   │   ├── __init__.py
 
-│   │   ├── main.py
+    │   │   ├── main.py
 
-│   ├── requirements.txt
+    │   ├── requirements.txt
 
-│   ├── Dockerfile
+    │   ├── Dockerfile
 
-│
+    │
 
-│── /db (Initialisation de la Base de Données)
+    │── /db (Initialisation de la Base de Données)
 
-│   ├── init.sql
+    │   ├── init.sql
 
-│
+    │
 
-│── docker-compose.yml (Orchestration des Conteneurs)
+    │── docker-compose.yml (Orchestration des Conteneurs)
 
-│── README.md (Documentation)
+    │── README.md (Documentation)
 
 🚀 Installation & Configuration
 
-1️⃣ Prérequis
+  1️⃣ Prérequis
 
-Assurez-vous d'avoir installé :
+    Assurez-vous d'avoir installé :
 
 
 
-Docker
+      Docker
 
-Docker Compose
+      Docker Compose
 
-2️⃣ Étapes d'Installation
+  2️⃣ Étapes d'Installation
 
-Cloner le dépôt
+      Cloner le dépôt
 
-git clone https://github.com/your-repo/web-app.git
+      git clone https://github.com/your-repo/web-app.git
 
-cd web-app
+      cd web-app
 
-Construire et démarrer les conteneurs
+      Construire et démarrer les conteneurs
 
-docker-compose up --build
+      docker-compose up --build
 
-Arrêter les conteneurs
+      Arrêter les conteneurs
 
-docker-compose down
+      docker-compose down
 
 🔧 Variables d'Environnement
 
-Utilisez un fichier .env pour stocker les données sensibles :
+    Utilisez un fichier .env pour stocker les données sensibles :
 
 
 
-DB_USER=root
+      DB_USER=root
 
-DB_PASSWORD=password
+      DB_PASSWORD=password
 
-DB_NAME=mydatabase
+      DB_NAME=mydatabase
 
-DB_HOST=db
+      DB_HOST=db
 
 🔒 Sécurisation
 
-Utilisation des variables d’environnement pour les mots de passe et les informations sensibles.
+      Utilisation des variables d’environnement pour les mots de passe et les informations sensibles.
 
-Limitation des permissions et restriction des ports exposés pour renforcer la sécurité.
+      Limitation des permissions et restriction des ports exposés pour renforcer la sécurité.
 
-Utilisation du framework open-source OWASP Dependency-Check pour analyser les dépendances et détecter les vulnérabilités.
+      Utilisation du framework open-source OWASP Dependency-Check pour analyser les dépendances et détecter les vulnérabilités.
 
-Mise en place de Fail2Ban pour limiter les tentatives de connexion infructueuses.
+      Mise en place de Fail2Ban pour limiter les tentatives de connexion infructueuses.
 
-Activation de CORS et CSRF Protection avec Flask pour prévenir les attaques de type cross-site scripting.
+      Activation de CORS et CSRF Protection avec Flask pour prévenir les attaques de type cross-site scripting.
 
 🏗️ Points d'API (Flask)
 
-GET /users → Récupérer tous les utilisateurs
+    GET /users → Récupérer tous les utilisateurs
 
-POST /users → Créer un nouvel utilisateur
+    POST /users → Créer un nouvel utilisateur
 
 🎨 Frontend
 
-Le frontend est construit avec React et Vite.
+    Le frontend est construit avec React et Vite.
 
-Les appels API sont effectués vers le backend Flask.
+    Les appels API sont effectués vers le backend Flask.
 
 🗄️ Base de Données (MySQL)
 
-Le fichier init.sql configure le schéma de la base de données.
+    Le fichier init.sql configure le schéma de la base de données.
 
-MySQL est exécuté en tant que conteneur Docker.
+    MySQL est exécuté en tant que conteneur Docker.
 
 📜 Licence
 
-Ce projet est sous licence MIT.
+    Ce projet est sous licence MIT.
 
